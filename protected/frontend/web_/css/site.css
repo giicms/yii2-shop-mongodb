@@ -1,0 +1,471 @@
+@font-face {
+    font-family: AcFont;
+    src: url(fonts/Ac.ttf);
+}
+html,
+body {
+    height: 100%;
+}
+a:hover{
+    text-decoration: none
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    background-color: #f1f3eb;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+.footer .contact{
+    text-align: center;
+    font-family: ACFont;
+}
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+.form-control,.btn{
+    border-radius: 0;
+}
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav > li > form .btn {
+    font-size: 12px;
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .nav li > form {
+        padding: 3px;
+    }
+}
+
+.nav > li > form > button:hover {
+    text-decoration: none;
+}
+.media-item{
+    margin-bottom: 15px
+}
+.media-item .media-left a img{
+    width: 100px;
+}
+pre{
+    border: 0;
+    background-color: #eee;
+}
+.slide-main {
+    width: 100%;
+    background: url('/images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #1e2e3b;
+    padding: 130px 0;
+    text-align: center;
+
+    font-family: AcFont;
+}
+.slide-main .title{
+    font-size: 42px;
+    color: #fff;
+}
+
+.slide-main .title-small{
+    font-size: 32px;
+    color: #799e30;
+}
+.navbar-top{
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 30px;
+    background-color: #6e7b6f;
+    border: none;
+}
+.navbar-top .navbar-nav > li > a{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    color: #fff;
+}
+.navbar-top .navbar-nav > .active > a, .navbar-top .navbar-nav > .active > a:hover, .navbar-top .navbar-nav > .active > a:focus{
+    background-color: #6e7b6f;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+    background-color: #6e7b6f;
+}
+.navbar-brand{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 30px;
+    color: #fff !important;
+}
+.secondary{
+    background-color: #f1f3eb;
+    text-align: center;
+    padding: 20px;
+}
+.secondary h1{
+    text-align: center;
+    font-family: ACfont;
+    color: #566B2F;
+    margin-bottom: 30px
+}
+.secondary  .img img{
+    width: 200px
+}
+.secondary h2{
+    font-family: ACfont;
+}
+.middle{
+    padding: 30px;
+    text-align: center;
+}
+.middle .item{
+    margin-bottom: 100px;
+    position: relative;
+    color: #fff;
+}
+.middle .item h2{
+    font-family: ACFont;
+}
+.middle .item .content-green{
+    position: absolute;
+    background-image: url(/images/small-green-background.png);
+    margin-left: 15px;
+    bottom: -50px;
+    width: 91%;
+    padding: 10px;
+}
+.middle .item .content-purple{
+    position: absolute;
+    background-image: url(/images/small-purple-background.png);
+    margin-left: 15px;
+    bottom: -50px;
+    width: 94%;
+    padding: 10px;
+
+}
+
+.middle img{
+    width: 100%;
+}
+
+.product-item{
+    margin-bottom: 25px;
+    text-align: center
+}
+.product-item .product-img{
+    text-align: center;
+}
+.product-item h4{
+    font-size: 13px;
+    height: 35px;
+    padding: 10px 0;
+    color: #2e3233
+}
+.product-item .addcart{
+    padding: 10px 0;
+}
+.product-item .addcart .btn{
+    border-radius: 0;
+}
+
+.product-item .addcart .empty{
+    display: none;
+}
+.product-item .addcart .quantity{
+    padding: 6px;
+}
+.product-item .addcart .btn{
+    padding: 6px 10px;
+    font-weight: bold
+}
+.cart-item{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0
+}
+.page{
+    border-top: 5px solid #65b144;
+    padding-top: 30px;
+    padding-bottom: 50px
+}
+.page h1{
+    margin-top: 0;
+    border-bottom: 1px solid #65b144;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.list-item li {
+    padding: 6px 0
+}
+.category-title{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #65b144
+}
+.product-detail h2{
+    margin-top: 0;
+    font-family: ACFont
+}
+
+.product-detail .rating{
+    padding: 10px 0;
+}
+.product-detail .addcart{
+    padding: 10px 0; 
+}
+.product-detail .addcart a{
+    width: 100px;
+    border-radius: 0;
+    font-weight: bold
+}
+.product-detail .addcart .btn{
+    font-weight: bold;
+    border-radius: 0;
+}
+.product-detail .addcart .quantity{
+    margin: 0 10px;
+    font-weight: bold;
+}
+.product-later{
+    margin-top: 20px;
+}
+.product-later h2{
+    font-family: ACFont
+}
+.product-item-review {
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    margin-left: 25%;
+}
+.numcart {
+    margin: 0;
+    padding: 0;
+}
+.numcart span{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.dropdown-menu > li > a{
+    padding: 3px 14px;
+    font-size: 13px;
+}
+.dropdown-menu > li > form .btn,.dropdown-menu > li > form .btn:hover{
+    color: #333;
+    text-decoration: none;
+    font-size: 13px
+}
+.dropdown-search .caret{
+    display: none
+}
+.btn-post{
+    padding: 0;
+    border: none;
+
+}
+.post-upload{
+    border: 5px dotted #ccc;
+    text-align: center;
+    padding: 20px;
+}
+textarea.form-control{
+    min-height: 200px;
+}
+.total-price{
+    font-size: 16px ;
+    font-weight: bold;
+    margin-top: 10px
+}
+.total-price span{
+    color: red
+}
+.total-price .btn{
+    margin-top: 10px;
+    width: 100%
+}
+.dl-order dt, .dl-order dd{
+    text-align: left;
+    padding: 5px 0;
+}
+.order-info{
+    border-bottom: 1px solid #ccc;
+}
+.write-review{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.rating { 
+    border: none;
+    float: left;
+    margin-bottom: 20px
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+    margin: 5px;
+    font-size: 1.1em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label { 
+    color: #ddd; 
+    float: right; 
+}
+
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover,  
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }     
+
+
+.review-detail { 
+    border: none;
+    float: left;
+    width: 100%;
+}
+
+.review-detail > input { display: none; } 
+.review-detail > label:before { 
+    margin-right: 5px;
+    font-size: 1.1em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.review-detail > .half:before { 
+    content: "\f089";
+    position: absolute;
+}
+
+.review-detail > label { 
+    color: #ddd; 
+}
+.review-detail > label.active{
+    color: #FFED85;
+} 
+.list-review{
+    min-height: 400px;
+}
+.list-review-group{
+    margin-bottom: 0;
+}
+.list-review-group .list-group-item{
+    border: none;
+    padding: 10px 0;
+
+}
+.star{
+    position: relative;
+    width: 90px;
+    padding: 0;
+    padding: 0
+}
+.rating-stars-off{
+    color: #c6c6c6;
+    font-size: 22px!important;
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+.rating-stars-on{
+    position: absolute;
+    left: 0;
+    top: -7px;
+    color: #f7b142!important;
+    font-size: 22px!important;
+    overflow: hidden;
+}
